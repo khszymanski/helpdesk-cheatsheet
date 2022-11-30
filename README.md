@@ -31,8 +31,39 @@
 then
 `net start spooler`
 
+**- Show ip address**
+
+`ipconfig`
+
+**- Allow/block ping**
+
+*enable ipv4*
+
+`netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow`
+
+*enable ipv6*
+
+`netsh advfirewall firewall add rule name="ICMP Allow incoming V6 echo request" protocol=icmpv6:8,any dir=in action=allow`
+
+*disable ipv4*
+
+`netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=block`
+
+*disable ipv6*
+
+`netsh advfirewall firewall add rule name="ICMP Allow incoming V6 echo request" protocol=icmpv6:8,any dir=in action=block`
+
+*all firewall frules*
+
+`netsh advfirewall firewall show rule name=all`
+
 
 ## Windows 10 tools
+### Press Win_r and type:
+
+**- Computer management**
+
+`compmgmt.msc`
 
 ---
 
