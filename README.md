@@ -3,19 +3,19 @@
 ## Windows 10
 ### Every commands work in powershell, run as administrator
 
-**1. Get Windows Product Key**
+**- Get Windows Product Key**
 
 `wmic path SoftwareLicensingService get OA3xOriginalProductKey`
 
-**2. Change hostname**
+**- Change hostname**
 
 `Rename-Computer -NewName "New hostname"`
 
-**3. Join a pc to doman**
+**- Join a pc to doman**
 
 `Add-Computer -DomainName DomainName -Restart`
 
-**4. Reboot/shutdown pc**
+**- Reboot/shutdown pc**
 
 `shutdown -r -t 0 /f` 
 
@@ -24,6 +24,15 @@
 `-r` -> reboot, `-s` -> shutdown
 `-t 0` -> time (sec) to shutdown 
 `/f` -> force
+
+**- Restart spooler/printer service**
+
+`net stop spooler`
+then
+`net start spooler`
+
+
+## Windows 10 tools
 
 ---
 
