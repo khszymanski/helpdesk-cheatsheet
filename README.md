@@ -59,7 +59,7 @@ all firewall frules
 
 
 ## Windows 10 tools
-### Press Win_r and type:
+### Press Win+R and type:
 
 **- Computer management**
 
