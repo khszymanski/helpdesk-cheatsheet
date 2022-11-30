@@ -5,7 +5,7 @@
 
 **1. Get Windows Product Key**
 
-`wmic path SoftwareLicensingService get 0A3xOriginalProductKey`
+`wmic path SoftwareLicensingService get OA3xOriginalProductKey`
 
 **2. Change hostname**
 
