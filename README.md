@@ -37,23 +37,23 @@ then
 
 **- Allow/block ping**
 
-*enable ipv4*
+enable ipv4
 
 `netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow`
 
-*enable ipv6*
+enable ipv6
 
 `netsh advfirewall firewall add rule name="ICMP Allow incoming V6 echo request" protocol=icmpv6:8,any dir=in action=allow`
 
-*disable ipv4*
+disable ipv4
 
 `netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=block`
 
-*disable ipv6*
+disable ipv6
 
 `netsh advfirewall firewall add rule name="ICMP Allow incoming V6 echo request" protocol=icmpv6:8,any dir=in action=block`
 
-*all firewall frules*
+all firewall frules
 
 `netsh advfirewall firewall show rule name=all`
 
